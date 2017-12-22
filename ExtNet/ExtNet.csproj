@@ -79,6 +79,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ControlsOverview\Buttons\SimpleButton.aspx" />
+    <Content Include="ControlsOverview\Buttons\SimpleButtonViaCodeBehind.aspx" />
+    <Content Include="Ext.NET.Default.2.1.aspx" />
+    <Content Include="images\iconPasteLarge.png" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -92,8 +96,23 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlsOverview\Buttons\SimpleButton.aspx.cs">
+      <DependentUpon>SimpleButton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlsOverview\Buttons\SimpleButton.aspx.designer.cs">
+      <DependentUpon>SimpleButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsOverview\Buttons\SimpleButtonViaCodeBehind.aspx.cs">
+      <DependentUpon>SimpleButtonViaCodeBehind.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlsOverview\Buttons\SimpleButtonViaCodeBehind.aspx.designer.cs">
+      <DependentUpon>SimpleButtonViaCodeBehind.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
