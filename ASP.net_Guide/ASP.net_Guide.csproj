@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A480305B-93D9-48E7-8597-6EEDCFC7F169}</ProjectGuid>
+    <ProjectGuid>{20062670-B94E-43F4-B27B-26D02F656173}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ExtNet</RootNamespace>
-    <AssemblyName>ExtNet</AssemblyName>
+    <RootNamespace>ASP.net_Guide</RootNamespace>
+    <AssemblyName>ASP.net_Guide</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -43,20 +43,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ext.Net">
-      <HintPath>..\packages\Ext.Net 4.1\Ext.Net.dll</HintPath>
-    </Reference>
-    <Reference Include="Ext.Net.Utilities">
-      <HintPath>..\packages\Ext.Net 4.1\Ext.Net.Utilities.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Ext.Net 4.1\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -73,15 +64,8 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="Transformer.NET">
-      <HintPath>..\packages\Ext.Net 4.1\Transformer.NET.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ControlsOverview\Buttons\SimpleButton.aspx" />
-    <Content Include="ControlsOverview\Buttons\SimpleButtonViaCodeBehind.aspx" />
-    <Content Include="Ext.NET.Default.2.1.aspx" />
-    <Content Include="images\iconPasteLarge.png" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -91,27 +75,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Ext.NET.Default.aspx" />
+    <Content Include="ErrorHanding.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControlsOverview\Buttons\SimpleButton.aspx.cs">
-      <DependentUpon>SimpleButton.aspx</DependentUpon>
+    <Compile Include="ErrorHanding.aspx.cs">
+      <DependentUpon>ErrorHanding.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ControlsOverview\Buttons\SimpleButton.aspx.designer.cs">
-      <DependentUpon>SimpleButton.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ControlsOverview\Buttons\SimpleButtonViaCodeBehind.aspx.cs">
-      <DependentUpon>SimpleButtonViaCodeBehind.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ControlsOverview\Buttons\SimpleButtonViaCodeBehind.aspx.designer.cs">
-      <DependentUpon>SimpleButtonViaCodeBehind.aspx</DependentUpon>
+    <Compile Include="ErrorHanding.aspx.designer.cs">
+      <DependentUpon>ErrorHanding.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -125,9 +101,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>9707</DevelopmentServerPort>
+          <DevelopmentServerPort>3017</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:9707/</IISUrl>
+          <IISUrl>http://localhost:3017/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
