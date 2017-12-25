@@ -43,8 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ext.Net">
-      <HintPath>..\packages\Ext.Net 4.1\Ext.Net.dll</HintPath>
+    <Reference Include="Ext.Net, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2e12ce3d0176cd87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Ext.NET.WebForms.4.1.0\lib\net45\Ext.Net.dll</HintPath>
     </Reference>
     <Reference Include="Ext.Net.Utilities">
       <HintPath>..\packages\Ext.Net 4.1\Ext.Net.Utilities.dll</HintPath>
@@ -78,8 +79,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ControlsOverview\Buttons\ButtonAndPanelWithDirectEvent.aspx" />
+    <Content Include="ControlsOverview\Buttons\ButtonWithDirectEvent.aspx" />
+    <Content Include="ControlsOverview\Buttons\ClickListener.aspx" />
+    <Content Include="ControlsOverview\Buttons\PassingCustomConfig.aspx" />
+    <Content Include="ControlsOverview\Buttons\PassingCustomConfigViaUndefinedProperties.aspx" />
+    <Content Include="ControlsOverview\Buttons\PassingExtNetId.aspx" />
     <Content Include="ControlsOverview\Buttons\SimpleButton.aspx" />
     <Content Include="ControlsOverview\Buttons\SimpleButtonViaCodeBehind.aspx" />
+    <Content Include="ControlsOverview\MessageBus\MessageBusExample.aspx" />
     <Content Include="Ext.NET.Default.2.1.aspx" />
     <Content Include="images\iconPasteLarge.png" />
     <Content Include="packages.config" />
@@ -95,6 +103,48 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlsOverview\Buttons\ButtonAndPanelWithDirectEvent.aspx.cs">
+      <DependentUpon>ButtonAndPanelWithDirectEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlsOverview\Buttons\ButtonAndPanelWithDirectEvent.aspx.designer.cs">
+      <DependentUpon>ButtonAndPanelWithDirectEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsOverview\Buttons\ButtonWithDirectEvent.aspx.cs">
+      <DependentUpon>ButtonWithDirectEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlsOverview\Buttons\ButtonWithDirectEvent.aspx.designer.cs">
+      <DependentUpon>ButtonWithDirectEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsOverview\Buttons\ClickListener.aspx.cs">
+      <DependentUpon>ClickListener.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlsOverview\Buttons\ClickListener.aspx.designer.cs">
+      <DependentUpon>ClickListener.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsOverview\Buttons\PassingCustomConfig.aspx.cs">
+      <DependentUpon>PassingCustomConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlsOverview\Buttons\PassingCustomConfig.aspx.designer.cs">
+      <DependentUpon>PassingCustomConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsOverview\Buttons\PassingCustomConfigViaUndefinedProperties.aspx.cs">
+      <DependentUpon>PassingCustomConfigViaUndefinedProperties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlsOverview\Buttons\PassingCustomConfigViaUndefinedProperties.aspx.designer.cs">
+      <DependentUpon>PassingCustomConfigViaUndefinedProperties.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsOverview\Buttons\PassingExtNetId.aspx.cs">
+      <DependentUpon>PassingExtNetId.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlsOverview\Buttons\PassingExtNetId.aspx.designer.cs">
+      <DependentUpon>PassingExtNetId.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ControlsOverview\Buttons\SimpleButton.aspx.cs">
       <DependentUpon>SimpleButton.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -108,6 +158,13 @@
     </Compile>
     <Compile Include="ControlsOverview\Buttons\SimpleButtonViaCodeBehind.aspx.designer.cs">
       <DependentUpon>SimpleButtonViaCodeBehind.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsOverview\MessageBus\MessageBusExample.aspx.cs">
+      <DependentUpon>MessageBusExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlsOverview\MessageBus\MessageBusExample.aspx.designer.cs">
+      <DependentUpon>MessageBusExample.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
