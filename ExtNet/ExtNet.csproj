@@ -79,6 +79,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ajax\PageMethods\PageMethodExample.aspx" />
+    <Content Include="Ajax\UpdatePanel\UpdatePanelComparison.aspx" />
     <Content Include="ControlsOverview\Buttons\ButtonAndPanelWithDirectEvent.aspx" />
     <Content Include="ControlsOverview\Buttons\ButtonWithDirectEvent.aspx" />
     <Content Include="ControlsOverview\Buttons\ClickListener.aspx" />
@@ -103,6 +105,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ajax\PageMethods\PageMethodExample.aspx.cs">
+      <DependentUpon>PageMethodExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\PageMethods\PageMethodExample.aspx.designer.cs">
+      <DependentUpon>PageMethodExample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\UpdatePanel\UpdatePanelComparison.aspx.cs">
+      <DependentUpon>UpdatePanelComparison.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\UpdatePanel\UpdatePanelComparison.aspx.designer.cs">
+      <DependentUpon>UpdatePanelComparison.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ControlsOverview\Buttons\ButtonAndPanelWithDirectEvent.aspx.cs">
       <DependentUpon>ButtonAndPanelWithDirectEvent.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
