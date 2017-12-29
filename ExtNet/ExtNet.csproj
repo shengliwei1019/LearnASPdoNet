@@ -88,6 +88,8 @@
     <Content Include="Ajax\DirectEvents\EventMaskCustomTargetWindowBody.aspx" />
     <Content Include="Ajax\DirectEvents\ExtraParamsInResponse.aspx" />
     <Content Include="Ajax\DirectEvents\FromAspNetControl.aspx" />
+    <Content Include="Ajax\DirectEvents\WebServices\CallingWebService.aspx" />
+    <Content Include="Ajax\DirectEvents\WebServices\ServerTimeService.asmx" />
     <Content Include="Ajax\PageMethods\PageMethodExample.aspx" />
     <Content Include="Ajax\UpdatePanel\UpdatePanelComparison.aspx" />
     <Content Include="ControlsOverview\Buttons\ButtonAndPanelWithDirectEvent.aspx" />
@@ -176,6 +178,17 @@
     </Compile>
     <Compile Include="Ajax\DirectEvents\FromAspNetControl.aspx.designer.cs">
       <DependentUpon>FromAspNetControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\DirectEvents\WebServices\CallingWebService.aspx.cs">
+      <DependentUpon>CallingWebService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\DirectEvents\WebServices\CallingWebService.aspx.designer.cs">
+      <DependentUpon>CallingWebService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\DirectEvents\WebServices\ServerTimeService.asmx.cs">
+      <DependentUpon>ServerTimeService.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Ajax\PageMethods\PageMethodExample.aspx.cs">
       <DependentUpon>PageMethodExample.aspx</DependentUpon>
