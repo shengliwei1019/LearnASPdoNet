@@ -33,5 +33,11 @@
             </Click>
         </DirectEvents>
     </ext:Button>
+
+    <ext:Button runat="server" Text="Get Server Time">
+        <DirectEvents>
+            <Click Url="ServerTimeHandler.ashx" Type="Load" Method="POST" />
+        </DirectEvents>
+    </ext:Button>
 </body>
 </html>

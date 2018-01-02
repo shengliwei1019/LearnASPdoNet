@@ -90,6 +90,8 @@
     <Content Include="Ajax\DirectEvents\FromAspNetControl.aspx" />
     <Content Include="Ajax\DirectEvents\WebServices\CallingWebService.aspx" />
     <Content Include="Ajax\DirectEvents\WebServices\ServerTimeService.asmx" />
+    <Content Include="Ajax\DirectMethods\Basic.aspx" />
+    <Content Include="Ajax\DirectMethods\BasicWithDirectMethodConfiguration.aspx" />
     <Content Include="Ajax\PageMethods\PageMethodExample.aspx" />
     <Content Include="Ajax\UpdatePanel\UpdatePanelComparison.aspx" />
     <Content Include="ControlsOverview\Buttons\ButtonAndPanelWithDirectEvent.aspx" />
@@ -104,6 +106,7 @@
     <Content Include="Ext.NET.Default.2.1.aspx" />
     <Content Include="images\iconPasteLarge.png" />
     <Content Include="packages.config" />
+    <Content Include="Ajax\DirectEvents\WebServices\ServerTimeHandler.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -186,9 +189,26 @@
     <Compile Include="Ajax\DirectEvents\WebServices\CallingWebService.aspx.designer.cs">
       <DependentUpon>CallingWebService.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Ajax\DirectEvents\WebServices\ServerTimeHandler.ashx.cs">
+      <DependentUpon>ServerTimeHandler.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Ajax\DirectEvents\WebServices\ServerTimeService.asmx.cs">
       <DependentUpon>ServerTimeService.asmx</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ajax\DirectMethods\Basic.aspx.cs">
+      <DependentUpon>Basic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\DirectMethods\Basic.aspx.designer.cs">
+      <DependentUpon>Basic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\DirectMethods\BasicWithDirectMethodConfiguration.aspx.cs">
+      <DependentUpon>BasicWithDirectMethodConfiguration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\DirectMethods\BasicWithDirectMethodConfiguration.aspx.designer.cs">
+      <DependentUpon>BasicWithDirectMethodConfiguration.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ajax\PageMethods\PageMethodExample.aspx.cs">
       <DependentUpon>PageMethodExample.aspx</DependentUpon>
